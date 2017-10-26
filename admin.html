@@ -46,7 +46,7 @@
 
 
     <!-- Main container -->
-    <main class="main-content">
+    <main class="main-content bg-gray">
 
 
 
@@ -56,94 +56,14 @@
       | Products
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="section">
+      <section class="section bg-gray">
         <div class="container">
 
           <div class="row gap-y">
             <div class="col-12 col-lg-8">
 
-              <table class="table table-cart">
-                <tbody valign="middle">
-                  <tr>
-                    <td>
-                      <a class="item-remove" href="#"><i class="ti-close"></i></a>
-                    </td>
-                    
-                    <td>
-                      <a href="shop-single.html">
-                        <img src="/dist/images/product-1.png" alt="...">
-                      </a>
-                    </td>
-
-                    <td>
-                      <h5>Apple Watch 2</h5>
-                      <p>Superior Sports Watch</p>
-                    </td>
-
-                    <td>
-                      <label>Quantity</label>
-                      <input class="form-control form-control-sm" type="text" placeholder="Quantity" value="1">
-                    </td>
-
-                    <td>
-                      <h4 class="price">$349</h4>
-                    </td>
-                  </tr>
-
-
-                  <tr>
-                    <td>
-                      <a class="item-remove" href="#"><i class="ti-close"></i></a>
-                    </td>
-                    
-                    <td>
-                      <a href="shop-single.html">
-                        <img src="/dist/images/product-9.png" alt="...">
-                      </a>
-                    </td>
-
-                    <td>
-                      <h5>iPhone 7 Plus</h5>
-                      <p>Portrait mode</p>
-                    </td>
-
-                    <td>
-                      <label>Quantity</label>
-                      <input class="form-control form-control-sm" type="text" placeholder="Quantity" value="1">
-                    </td>
-
-                    <td>
-                      <h4 class="price">$769</h4>
-                    </td>
-                  </tr>
-
-
-                  <tr>
-                    <td>
-                      <a class="item-remove" href="#"><i class="ti-close"></i></a>
-                    </td>
-                    
-                    <td>
-                      <a href="shop-single.html">
-                        <img src="/dist/images/product-7.png" alt="...">
-                      </a>
-                    </td>
-
-                    <td>
-                      <h5>Mac Book Pro</h5>
-                      <p>A touch of genius</p>
-                    </td>
-
-                    <td>
-                      <label>Quantity</label>
-                      <input class="form-control form-control-sm" type="text" placeholder="Quantity" value="1">
-                    </td>
-
-                    <td>
-                      <h4 class="price">$2,799</h4>
-                    </td>
-                  </tr>
-
+              <table class="table table-cart bg-white">
+                <tbody id="table-tracks" valign="middle">
                 </tbody>
               </table>
 
@@ -152,14 +72,16 @@
 
             <div class="col-12 col-lg-4">
               <div class="cart-price">
-				  <h3>Join Audio Stream</h3>
-				  	<hr/>
-					<input id="input-name" type="text" placeholder="Name" class="form-control"/><br/>
-					<input id="input-email" type="text" placeholder="Email" class="form-control"/><br/>
-					<input id="input-password" type="password" placeholder="Password" class="form-control"/><br/>
-					<div class="text-right">
-						<button id="button-join" class="btn btn-primary" type="submit">Sign Up <i class="ti-angle-right fs-9"></i></button>
-					</div>
+				  <h3 id="header-username" class="text-capitalize"></h3>
+					  <hr/>
+					  <ul>
+						  <li>10 Tracks</li>
+						  <li>100 Followers</li>
+						  <li>1000 Reviews</li>
+					  </ul>
+					  <hr/>
+					  <button id="button-upload" class="btn btn-info">Upload Track</button>
+					
               </div>
             </div>
           </div>
@@ -169,17 +91,8 @@
         </div>
       </section>
 
-
-
-
-
-
     </main>
     <!-- END Main container -->
-
-
-
-
 
 
     <!-- Footer -->

@@ -2567,14 +2567,14 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   thesaas.topbar = function() {
 
     var body = $('body');
-    $(window).on('scroll', function() {
-      if ($(document).scrollTop() > 10) {
-        body.addClass('body-scrolled');
-      }
-      else {
-        body.removeClass('body-scrolled');
-      }
-    });
+    // $(window).on('scroll', function() {
+    //   if ($(document).scrollTop() > 10) {
+    //     body.addClass('body-scrolled');
+    //   }
+    //   else {
+    //     body.removeClass('body-scrolled');
+    //   }
+    // });
 
 
     // Open menu on click

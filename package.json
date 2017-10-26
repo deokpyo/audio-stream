@@ -29,7 +29,8 @@
   },
   "deploy": [
     "index.html",
-    "dist"
+    "dist",
+    "admin.html"
   ],
   "format": "static",
   "app": "59f257cb8a9c7500124d6626"
