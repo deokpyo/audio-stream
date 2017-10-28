@@ -37,7 +37,7 @@
         <a class="btn btn-sm btn-danger mr-4" href="page-login.html">Sign in</a>
         <a class="btn btn-sm btn-outline btn-danger hidden-sm-down" href="page-register.html">Sign up</a>
 
-        <button class="drawer-toggler ml-12">&#9776;</button>
+        <button id="button-toggle" style="display: none" class="drawer-toggler ml-12">&#9776;</button>
       </div>
 
     </div>
@@ -121,7 +121,11 @@
   <!-- Drawer -->
   <div class="drawer">
     <div class="drawer-content">
-      <ul class="nav nav-primary nav-hero flex-column">
+
+      <h3 id="selected-station-name" class="text-capitalize"></h3>
+      <hr />
+
+      <ul id="selected-station-tracks" class="nav nav-primary nav-hero flex-column">
         <li class="nav-item">
           <a class="nav-link" href="page-how-it-works.html">How it works</a>
         </li>
@@ -136,26 +140,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="page-jobs.html">Careers</a>
-        </li>
-      </ul>
-
-      <br>
-
-      <ul class="nav nav-primary flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="page-about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="page-faq.html">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="page-privacy.html">Privacy Policy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="page-contact.html">Contact</a>
         </li>
       </ul>
 
@@ -174,18 +158,6 @@
         <a class="social-linkedin" href="#">
           <i class="fa fa-linkedin"></i>
         </a>
-      </div>
-
-      <br>
-
-      <div class="row">
-        <div class="col-6">
-          <a class="btn btn-sm btn-block btn-primary" href="page-login.html">Login</a>
-        </div>
-
-        <div class="col-6">
-          <a class="btn btn-sm btn-block btn-primary" href="page-register.html">register</a>
-        </div>
       </div>
 
     </div>
