@@ -3,22 +3,54 @@
 	var stations = {};
 	var selectedStation = null;
 
+	var configureAudioPlayer = function(tracks) {
+		if (tracks === null) {
+			return;
+		}
+		var ap4 = new APlayer({
+			element: document.getElementById('aplayer'),
+			narrow: false,
+			autoplay: false,
+			showlrc: false,
+			mutex: true,
+			theme: '#ad7a86',
+			music: tracks
+			// music: [
+			// 	{
+			// 		title: 'Test',
+			// 		author: 'Tester',
+			// 		url: 'https://storage.turbo360.co/audio-stream-y0wath/SampleAudio_0.7mb.mp3'
+			// 		// pic: 'http://devtest.qiniudn.com/あっちゅ～ま青春!.jpg'
+			// 	}
+			// ]
+		});
+	};
+
 	var selectStation = function(event) {
 		event.preventDefault();
 		selectedStation = stations[event.target.id];
-        console.log('Select Station: ' + selectedStation);
-        
-        $('#selected-station-name').html(selectedStation.name);
-        var trackList = '';
-        if(selectedStation.tracks != null) {
-            selectedStation.tracks.forEach(function(track, i) {
-                trackList += '<li class="nav-item">';
-                trackList += ' <a class="nav-link" href="#">'+ track.name+'</a>';
-                trackList += '</li>';
-            });
+		console.log('Select Station: ' + selectedStation);
 
-        }
-        $('#selected-station-tracks').html(trackList);
+		$('#selected-station-name').html(selectedStation.name);
+		// var trackList = '';
+
+		if (selectedStation.tracks != null) {
+			var tracks = [];
+			selectedStation.tracks.forEach(function(track, i) {
+				// trackList += '<li class="nav-item">';
+				// trackList += ' <a class="nav-link" href="#">' + track.name + '</a>';
+				// trackList += '</li>';
+				tracks.push({
+					title: track.name,
+					url: track.url,
+					author: '',
+					pic: ''
+				});
+			});
+
+			configureAudioPlayer(tracks);
+		}
+		// $('#selected-station-tracks').html(trackList);
 		$('#button-toggle').click();
 	};
 
